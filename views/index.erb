@@ -1,0 +1,14 @@
+<h1>blog de noticias de viejitos</h1>
+<h2> estos son mis posts</h2>
+
+<ul>
+<% @posts.each do |post| %>
+  
+    <li> 
+<%= "#{post.name}"%>
+<%= "#{post.description}"%>
+<%= "#{post.created_at}"%>
+
+    </li>
+    <% end %>
+</ul>
